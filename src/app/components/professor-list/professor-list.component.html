@@ -1,0 +1,14 @@
+<h2>Profesores por Curso</h2>
+
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let course of getCourses()">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ course }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item *ngFor="let professor of getProfessorsByCourse(course)">
+        {{ professor.name }}
+      </mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
+</mat-accordion>

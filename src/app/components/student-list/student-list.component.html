@@ -1,0 +1,8 @@
+<h2>Calendario de Actividades</h2>
+<mat-list>
+  <mat-list-item *ngFor="let course of courses">
+    <h3 mat-line>{{ course.title }}</h3>
+    <p mat-line>{{ course.description }}</p>
+    <p mat-line>{{ course.date | date }}</p>
+  </mat-list-item>
+</mat-list>
